@@ -22,6 +22,7 @@ public class ShowListAction extends AbstractAction{
 		List<PostVO> List = dao.getPostList(userVo.getUserid());
 		ServletContext svc = req.getServletContext();
 		ses.setAttribute("List", List);
+		System.out.println(List.get(1).getPictures());
 		this.setViewPage("/main.jsp");
 		this.setRedirect(false);
 	}

@@ -1,4 +1,4 @@
-
+﻿
 package common.controller;
 
 import java.io.FileInputStream;
@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(urlPatterns = { "*.do" }, initParams = {
-		@WebInitParam(name = "config", value = "C:\\Users\\user\\Desktop\\work\\MyJava\\Java_Eclipse_workspace\\TIStargram\\WebContent\\WEB-INF\\Command.properties") })
+		@WebInitParam(name = "config", value = "C:\\Users\\user\\git\\repository\\TIStargram\\WebContent\\WEB-INF\\Command.properties") })
 public class FrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private Map<String, Object> cmdMap = new HashMap<>();

@@ -49,6 +49,10 @@ public class PostVO implements Serializable {
 		return pic.trim();
 	}
 
+	public String getPictures(int num) {
+		return pictures[num];
+	}
+	
 	public void setPictures(String[] pictures) {
 		this.pictures = pictures;
 	}
